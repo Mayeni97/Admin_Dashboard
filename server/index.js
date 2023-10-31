@@ -28,8 +28,9 @@ app.use("/management", managementRoutes);
 app.use("/sales", salesRoutes);
 
 
-//mongoose
 const PORT = process.env.PORT || 9000;
+
+//mongoose
 mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
